@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/blury_background"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="120dp"
+            android:drawablePadding="5dp"
+            android:text="Linked In"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Let's Login"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Don't Have an Email ? Register"
+            android:textAlignment="center"
+
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Emailtxt"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_margin="20dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:autofillHints="Email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordtxt"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Emailtxt">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Forget_Passwordtxt"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Forget Password ?"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordtxt">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/g_blue"
+            android:text="Login"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Forget_Passwordtxt">
+
+        </Button>
+
+        <ImageView
+            android:id="@+id/facelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regBtn">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FaceBook"
+            app:layout_constraintBottom_toBottomOf="@+id/facelogin"
+            app:layout_constraintEnd_toEndOf="@+id/facelogin"
+            app:layout_constraintStart_toStartOf="@+id/facelogin"
+            app:layout_constraintTop_toTopOf="@+id/facelogin">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/Google_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regBtn">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            app:layout_constraintBottom_toBottomOf="@+id/Google_login"
+            app:layout_constraintEnd_toEndOf="@+id/Google_login"
+            app:layout_constraintStart_toStartOf="@+id/Google_login"
+            app:layout_constraintTop_toTopOf="@+id/Google_login">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
